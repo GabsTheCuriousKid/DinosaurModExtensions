@@ -37,6 +37,10 @@
                 name: "Lua (Fengari)",
                 blocks: [
                     {
+                        blockType: "label",
+                        text: "This doesn't work offline!",
+                    },
+                    {
                         opcode: "runLua",
                         blockType: Scratch.BlockType.COMMAND,
                         text: "run lua code [CODE]",

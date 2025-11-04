@@ -29,6 +29,10 @@
               name: "Python (Pyodide)",
               blocks: [
                 {
+                  blockType: "label",
+                  text: "This doesn't work offline!",
+                },
+                {
                   opcode: 'PYTHON_runPython',
                   text: 'run python [CODE]',
                   blockType: Scratch.BlockType.COMMAND,

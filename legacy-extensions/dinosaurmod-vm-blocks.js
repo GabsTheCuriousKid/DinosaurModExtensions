@@ -39,6 +39,18 @@ class HacksExtension {
         },
         {
           blockType: "label",
+          text: "Sound",
+        },
+        {
+          blockType: Scratch.BlockType.XML,
+          xml: `<block type="sound_getTimePosition">
+                  <value name="SOUND_MENU">
+                    <shadow type="sound_sounds_menu"></shadow>
+                  </value>
+                </block>`,
+        },
+        {
+          blockType: "label",
           text: "Sensing",
         },
         {
@@ -64,26 +76,6 @@ class HacksExtension {
                 </shadow>
             </value>
             <value name="NUM">
-                <shadow type="math_number">
-                    <field name="NUM">100</field>
-                </shadow>
-            </value>
-        </block>`,
-        },
-        {
-          blockType: Scratch.BlockType.XML,
-          xml: `<block type="operator_clamp">
-            <value name="NUM">
-                <shadow type="math_number">
-                    <field name="NUM">50</field>
-                </shadow>
-            </value>
-            <value name="MIN">
-                <shadow type="math_number">
-                    <field name="NUM">1</field>
-                </shadow>
-            </value>
-            <value name="MAX">
                 <shadow type="math_number">
                     <field name="NUM">100</field>
                 </shadow>
